@@ -1,0 +1,7 @@
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\bin\Debug\TextReaderApp.exe.config
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\bin\Debug\TextReaderApp.exe
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\bin\Debug\TextReaderApp.pdb
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\obj\Debug\TextReaderApp.csprojAssemblyReference.cache
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\obj\Debug\TextReaderApp.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\obj\Debug\TextReaderApp.exe
+C:\Users\Alexander\source\repos\TextReaderApp\TextReaderApp\obj\Debug\TextReaderApp.pdb
