@@ -25,16 +25,18 @@ namespace TextReaderApp
             Files = dir.GetFiles("*.txt");
         }
 
-        public void ShowFileText(int item)
+        public string GetFileText(int item)
         {
+            string str = "";
             StreamReader reader = new StreamReader(Files[--item].FullName);
             string line = reader.ReadLine();
             while (line != null)
             {
-                Console.WriteLine(line);
+                str += line + "\n";
                 line = reader.ReadLine();
             }
             reader.Close();
+            return str;
         }
     }
 }

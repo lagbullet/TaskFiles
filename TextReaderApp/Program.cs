@@ -14,7 +14,8 @@ namespace TextReaderApp
             foreach (FileInfo file in TxtReader.Files)
                 Console.WriteLine("{0} - {1}", ++i, file.Name);
             Console.WriteLine("Choose a file that needs to be read");
-            TxtReader.ShowFileText(Convert.ToInt32(Console.ReadLine()));
+            Console.Write(TxtReader.GetFileText(Convert.ToInt32(Console.ReadLine())));
+
             Console.ReadKey();
         }
     }
