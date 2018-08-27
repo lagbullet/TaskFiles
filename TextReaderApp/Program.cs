@@ -10,8 +10,11 @@ namespace TextReaderApp
             Console.WriteLine("Enter a directory");
             TextReader TxtReader = new TextReader(Console.ReadLine());
             TxtReader.GetFilesFromDir();
+            int i = 0;
+            foreach (FileInfo file in TxtReader.Files)
+                Console.WriteLine("{0} - {1}", ++i, file.Name);
             Console.WriteLine("Choose a file that needs to be read");
-            TxtReader.GetTextFromFile(Convert.ToInt32(Console.ReadLine()));
+            TxtReader.ShowFileText(Convert.ToInt32(Console.ReadLine()));
             Console.ReadKey();
         }
     }

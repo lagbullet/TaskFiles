@@ -10,7 +10,7 @@ namespace TextReaderApp
     class TextReader
     {
         private string _Dir;
-        private FileInfo[] Files;
+        public FileInfo[] Files;
 
         public string Dir { get; set; }
 
@@ -23,12 +23,9 @@ namespace TextReaderApp
         {
             DirectoryInfo dir = new DirectoryInfo(Dir);
             Files = dir.GetFiles("*.txt");
-            int i=0;
-            foreach (FileInfo file in Files)
-                Console.WriteLine("{0} - {1}", ++i, file.Name);
         }
 
-        public void GetTextFromFile(int item)
+        public void ShowFileText(int item)
         {
             StreamReader reader = new StreamReader(Files[--item].FullName);
             string line = reader.ReadLine();
